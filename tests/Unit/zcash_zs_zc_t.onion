@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#zcash-addresses -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Addresses in Zcash — Zcash Documentation 2.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/pygments.css" type="text/css">
+    <link rel="index" title="Index" href="https://zcash.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://zcash.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="Sapling Turnstile" href="https://zcash.readthedocs.io/en/latest/rtd_pages/sapling_turnstile.html">
+    <link rel="prev" title="Wallet Backup Instructions" href="https://zcash.readthedocs.io/en/latest/rtd_pages/wallet_backup.html"> 
+
+  
+  <script async="" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/analytics.js.download"></script><script src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/modernizr.min.js.download"></script>
+
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html">
+
+<link rel="stylesheet" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/readthedocs-data.js.download"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'rtd_pages/addresses'
+READTHEDOCS_DATA['source_suffix'] = '.rst'
+</script>
+
+<script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/readthedocs-analytics.js.download"></script>
+
+<!-- end RTD <extrahead> -->
+<style type="text/css">.txlive {display: none;}
+</style><script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/manifest.jsonp"></script><style type="text/css">.txlive-langselector { position:fixed;z-index:999999;min-width: 120px;line-height:32px;background-color:rgba( 0,0,0,0.75 );box-shadow: 0 0 4px rgba( 0,0,0,0.3 );color: #fff;font-size: 14px;font-family: inherit; }.txlive-langselector * { margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;border-radius: 0;-moz-border-radius:0;-webkit-border-radius:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-border-radius:0;opacity:1; }.txlive-langselector.txlive-langselector-topleft { top:0;left:0;right:auto;bottom:auto;border-radius: 0 0 2px 0;-moz-border-radius: 0 0 2px 0;-webkit-border-radius: 0 0 2px 0; }.txlive-langselector.txlive-langselector-topright { top:0;left:auto;right:0;bottom:auto;border-radius: 0 2px 0 0;-moz-border-radius: 0 2px 0 0;-webkit-border-radius: 0 2px 0 0; }.txlive-langselector.txlive-langselector-bottomleft { top:auto;left:0;right:auto;bottom:0;border-radius: 0 2px 0 0;-moz-border-radius: 0 2px 0 0;-webkit-border-radius: 0 2px 0 0; }.txlive-langselector.txlive-langselector-bottomright { top:auto;left:auto;right:0;bottom:0;border-radius: 2px 0 0 0;-moz-border-radius: 2px 0 0 0;-webkit-border-radius: 2px 0 0 0; }.txlive-langselector .txlive-langselector-toggle { overflow: hidden;display: block;padding:2px 16px;width: 100%;height:36px;cursor:pointer;cursor:hand; }.txlive-langselector.txlive-langselector-topleft .txlive-langselector-toggle { overflow: hidden;display: block;border-top:2px solid #006f9f;padding:2px 16px;height:36px;line-height:32px;cursor:pointer;cursor:hand; }.txlive-langselector.txlive-langselector-topright .txlive-langselector-toggle { overflow: hidden;display: block;border-top:2px solid #006f9f;padding:2px 16px;height:36px;line-height:32px;cursor:pointer;cursor:hand; }.txlive-langselector.txlive-langselector-bottomleft .txlive-langselector-toggle { overflow: hidden;display: block;border-bottom:2px solid #006f9f;padding:2px 16px;height:36px;line-height:32px;cursor:pointer;cursor:hand; }.txlive-langselector.txlive-langselector-bottomright .txlive-langselector-toggle { overflow: hidden;display: block;border-bottom:2px solid #006f9f;padding:2px 16px;height:36px;line-height:32px;cursor:pointer;cursor:hand; }.txlive-langselector .txlive-langselector-current { float: left;padding: 0;max-width: 200px;overflow:hidden;white-space: nowrap;text-overflow:ellipsis; }.txlive-langselector .txlive-langselector-marker { float: right;display: block;position:relative;width:0;height:0;margin-left:8px;margin-top: 13px;border-right:4px dashed transparent;border-left:4px dashed transparent;}.txlive-langselector-topright .txlive-langselector-marker,.txlive-langselector-topleft .txlive-langselector-marker {border-top:4px solid #fff;}.txlive-langselector-bottomright .txlive-langselector-marker,.txlive-langselector-bottomleft .txlive-langselector-marker {border-bottom:4px solid #fff;}.txlive-langselector-list { position:absolute;width: 100%;margin:0;padding:10px 0;display:none;background-color:#eaf1f7;box-shadow: 0 0 4px rgba( 0,0,0,0.3 );color:#666;list-style-type:none; }.txlive-langselector-list.txlive-langselector-list-opened { display:block;max-height:315px;overflow:auto; }.txlive-langselector-list > li {padding:0 16px;width:100%;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}.txlive-langselector-list > li:hover {background-color:#b0b9c1;color:#fff;cursor:pointer;cursor:hand;}.txlive-langselector-topright > .txlive-langselector-list {top:40px;left:auto;right:0;bottom:auto;border-bottom: 1px solid #f4f7f9;}.txlive-langselector-topleft > .txlive-langselector-list {top:40px;left:0;right:auto;bottom:auto;border-bottom: 1px solid #f4f7f9;}.txlive-langselector-bottomright > .txlive-langselector-list {top:auto;left:auto;right:0;bottom:40px;border-top: 1px solid #f4f7f9;}.txlive-langselector-bottomleft > .txlive-langselector-list {top:auto;left:0;right:auto;bottom:40px;border-top: 1px solid #f4f7f9;}.txlive-langselector-topright > .txlive-langselector-list,.txlive-langselector-bottomright > .txlive-langselector-list {border-radius: 2px 0 0 2px;-moz-border-radius: 2px 0 0 2px;-webkit-border-radius: 2px 0 0 2px;}.txlive-langselector-topleft > .txlive-langselector-list,.txlive-langselector-bottomleft > .txlive-langselector-list {border-radius: 0 2px 2px 0;-moz-border-radius: 0 2px 2px 0;-webkit-border-radius: 0 2px 2px 0;}</style></head>
+
+<body class="wy-body-for-nav" style="">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="https://zcash.readthedocs.io/en/latest/index.html" class="icon icon-home"> Zcash Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="https://zcash.readthedocs.io/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs">
+    <input type="hidden" name="check_keywords" value="yes">
+    <input type="hidden" name="area" value="default">
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Using Zcashd</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/install_debian_bin_packages.html">Debian Binary Packages Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/install_binary_tarball.html">Binary Tarball Download &amp; Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/troubleshooting_guide.html">Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/payment_api.html">Zcash Payment API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/wallet_backup.html">Wallet Backup Instructions</a></li>
+<li class="toctree-l1 current"><a class="reference internal current" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#"><span class="toctree-expand"></span>Addresses in Zcash</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#shielded-addresses"><span class="toctree-expand"></span>Shielded Addresses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#hd-wallets">HD Wallets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#viewing-keys">Viewing Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#transparent-addresses">Transparent Addresses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#additional-reading">Additional Reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/sapling_turnstile.html">Sapling Turnstile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/zcash_conf_guide.html">Zcash.conf Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/zcash_mining_guide.html">Zcash Mining Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/security_warnings.html">Security Warnings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/glossary.html">Glossary</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developers &amp; Contributors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/zig.html">Zcash Integration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/development_guidelines.html">Development Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/supported_platform_policy.html">Supported Platform Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/index_zips.html">Zcash Improvement Proposals (ZIPs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/nu_dev_guide.html">Network Upgrade Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/testnet_guide.html">Testnet Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/librustzcash_arch.html">Zcash Rust Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/ux_wallet_checklist.html">Wallet Developer UX Checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/code_of_conduct.html">Contributor Code of Conduct</a></li>
+</ul>
+
+            
+          
+        </div>
+      <div id="rtd-q3wsxrag" class="ethical-rtd ethical-dark-theme"></div></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://zcash.readthedocs.io/en/latest/index.html">Zcash Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+    <a href="https://gitlab.com/zcash-docs/zcash-docs" class="fa fa-gitlab">&nbsp;
+    Edit on GitLab</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="https://zcash.readthedocs.io/en/latest/index.html">Docs</a> »</li>
+        
+      <li>Addresses in Zcash</li>
+    
+    
+
+  </ul>
+
+  
+  <hr>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="addresses-in-zcash">
+<span id="zcash-addresses"></span><h1>Addresses in Zcash<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#addresses-in-zcash" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#overview" title="Permalink to this headline">¶</a></h2>
+<p>Zcash has two main types of addresses: shielded (z-addresses which start with “z”) and transparent (t-addresses which start with “t”).</p>
+<p>The Sapling network upgrade added a new type of shielded address to support the usability and security improvements. The new Sapling shielded addresses start with “zs” whereas the legacy, Sprout shielded addresses start with “zc”.</p>
+<p>Example addresses:</p>
+<blockquote>
+<div><p>Sapling:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zs1z7rejlpsa98s2rrrfkwmaxu53e4ue0ulcrw0h4x5g8jl04tak0d3mm47vdtahatqrlkngh9sly</span>
+</pre></div>
+</div>
+<p>Legacy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zcU1Cd6zYyZCd2VJF8yKgmzjxdiiU1rgTTjEwoN1CGUWCziPkUTXUjXmX7TMqdMNsTfuiGN1jQoVN4kGxUR4sAPN4XZ7pxb</span>
+</pre></div>
+</div>
+<p>Transparent:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">t14oHp2v54vfmdgQ3v3SNuQga8JKHTNi2a1</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>ZEC can be sent between transparent and shielded addresses. Therefore, there are four basic types of transactions:</p>
+<div class="figure" id="id1">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-private.png"><img alt="A transaction between two shielded addresses doesn&#39;t reveal the value" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-private.png" style="width: 219.0px; height: 185.5px;"></a>
+<p class="caption"><span class="caption-text"><strong>Shielded/private</strong> (Value is not revealed on the blockchain)</span></p>
+</div>
+<div class="figure" id="id2">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-deshielding.png"><img alt="A transaction from a shielded address to a transparent address reveals the value received" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-deshielding.png" style="width: 219.0px; height: 185.5px;"></a>
+<p class="caption"><span class="caption-text"><strong>Deshielding</strong> (Value is revealed on the receiver end)</span></p>
+</div>
+<div class="figure" id="id3">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-shielding.png"><img alt="A transaction from a transparent address to a shielded address reveals the value sent" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-shielding.png" style="width: 219.5px; height: 185.5px;"></a>
+<p class="caption"><span class="caption-text"><strong>Shielding</strong> (Value is revealed on the sender end)</span></p>
+</div>
+<div class="figure" id="id4">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-public.png"><img alt="A transaction between two transparent addresses reveals the value" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/txn-public.png" style="width: 219.0px; height: 185.5px;"></a>
+<p class="caption"><span class="caption-text"><strong>Transparent/public</strong> (Value is revealed by both sender and receiver)</span></p>
+</div>
+</div>
+<div class="section" id="shielded-addresses">
+<h2>Shielded Addresses<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#shielded-addresses" title="Permalink to this headline">¶</a></h2>
+<p>Shielded addresses are the address type that use zero-knowledge proofs to allow transaction data to be encrypted but remain verifiable by network nodes. Sapling shielded addresses are the primary shielded addresses as of the <a class="reference external" href="https://z.cash/upgrade/sapling">Sapling network upgrade activation</a>. The legacy, Sprout addresses are still supported but will likely be deprecated in future. To learn about migrating from Sprout to Sapling addresses, see <a class="reference internal" href="https://zcash.readthedocs.io/en/latest/rtd_pages/sapling_turnstile.html#sapling-turnstile"><span class="std std-ref">Sapling Turnstile</span></a> documentation.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/simple-z.png"><img alt="A diagram of a shielded address showing that values sent and received are not directly revealed except for the transaction fee." src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/simple-z.png" style="width: 268.5px; height: 132.0px;"></a>
+<p class="caption"><span class="caption-text">Shielded addresses and the values sent to or from them are not publicly visible.</span></p>
+</div>
+<p><em class="fa fa-arrow-circle-right"></em> A transaction between two shielded addresses (a shielded transaction) keeps the addresses, transaction amount and the memo field shielded from the public (with the exception of migrating funds between Sprout and Sapling shielded addresses).</p>
+<p><em class="fa fa-arrow-circle-right"></em> Senders to a shielded address may or may not include an encrypted memo.</p>
+<p><em class="fa fa-arrow-circle-right"></em> Recipients of a shielded or deshielding transaction do not learn about the senders address through the transaction recipt in their wallet. The receivers only learn the value sent to their address(es) and if receiving to shielded addresses, any encrypted memo that may have been included by the sender.</p>
+<p><em class="fa fa-arrow-circle-right"></em> Many wallets do not include shielded address support yet but this is expected to change over time with the adoption of Sapling addresses.</p>
+<p><em class="fa fa-arrow-circle-right"></em> Transaction fees are visible regardless of sending to and/or receiving from shielded addresses.</p>
+<p><em class="fa fa-arrow-circle-right"></em> The transaction subsequent to a coinbase transaction (which is always to a transparent address) must be a shielding transaction.</p>
+<div class="section" id="hd-wallets">
+<h3>HD Wallets<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#hd-wallets" title="Permalink to this headline">¶</a></h3>
+<p>Sapling addresses support a hierarchical deterministic wallet structure. This allows a master wallet seed to be used as a backup method for all Sapling addresses in a wallet. See the blog post, <a class="reference external" href="https://z.cash/blog/sapling-in-hd/">Sapling in HD</a> to understand more about how this feature is supported. Note that HD support is not enabled for Sprout or transparent addresses.</p>
+</div>
+<div class="section" id="viewing-keys">
+<h3>Viewing Keys<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#viewing-keys" title="Permalink to this headline">¶</a></h3>
+<p>Viewing keys allow for the separation of spending and viewing permissions associated with shielded addresses. Users might want to give third-parties view access to their shielded addresses without also handing over spending capabilities or using a transparent address. For example, consider accounting or auditing use cases.</p>
+<p>Currently, viewing keys are only partially supported in Sprout shielded addresses in the form of incoming viewing keys. This means, the viewing key will only be able to track incoming payments to a Sprout address. Sapling addresses do not have any viewing key support. This documentation will be updated when full Sapling address support is integrated.</p>
+</div>
+</div>
+<div class="section" id="transparent-addresses">
+<h2>Transparent Addresses<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#transparent-addresses" title="Permalink to this headline">¶</a></h2>
+<p>Transparent addresses work similarly to Bitcoin addresses and do not offer privacy for users.</p>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/simple-t.png"><img alt="A diagram of a transparent address showing that all values sent and received are directly revealed including the transaction fee." src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/simple-t.png" style="width: 270.0px; height: 138.0px;"></a>
+<p class="caption"><span class="caption-text">Transparent addresses and the values sent to or from them are publicly visible</span></p>
+</div>
+<p><em class="fa fa-arrow-circle-right"></em> At this time, some advanced features such as multisignature and the use of bitcoin-style scripting with opcodes are only supported by transparent addresses. Multisignature addresses start with a “t3” as opposed to the single signature standard address which start with a “t1”.</p>
+<p><em class="fa fa-arrow-circle-right"></em> Many wallets only support transparent addresses.</p>
+<p><em class="fa fa-arrow-circle-right"></em> Coinbase transactions (AKA block rewards and miner fee payouts) can only be sent to transparent addresses.</p>
+</div>
+<div class="section" id="additional-reading">
+<h2>Additional Reading<a class="headerlink" href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html#additional-reading" title="Permalink to this headline">¶</a></h2>
+<p><em class="fa fa-arrow-circle-right"></em> <a class="reference external" href="https://z.cash/support/security/privacy-security-recommendations/">Privacy Considerations for Official Zcash Software &amp; Third-Party Wallets</a></p>
+<p><em class="fa fa-arrow-circle-right"></em> <a class="reference external" href="https://blog.z.cash/anatomy-of-zcash/">Anatomy of a Zcash Transaction</a></p>
+<p><em class="fa fa-arrow-circle-right"></em> <a class="reference external" href="https://blog.z.cash/transaction-linkability/">Transaction Linkability</a></p>
+<p><em class="fa fa-arrow-circle-right"></em> <a class="reference external" href="https://z.cash/blog/viewing-keys-selective-disclosure/">Selective Disclosure &amp; Shielded Viewing Keys</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="https://zcash.readthedocs.io/en/latest/rtd_pages/sapling_turnstile.html" class="btn btn-neutral float-right" title="Sapling Turnstile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="https://zcash.readthedocs.io/en/latest/rtd_pages/wallet_backup.html" class="btn btn-neutral" title="Wallet Backup Instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr><div><div id="rtd-m8a14rca" class="ethical-rtd"><div class="ethical-footer"><div class="ethical-content"><a href="https://readthedocs.org/sustainability/click/248/vRM9Ojx94TyQ/" rel="nofollow" target="_blank" class="ethical-image-link"><img src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/rollbar-rtd-logo-1-fs8.png"></a><div class="ethical-text"><strong><a href="https://readthedocs.org/sustainability/click/248/vRM9Ojx94TyQ/" rel="nofollow" target="_blank">Level up your Continuous Delivery.</a></strong> 🚀 <br>
+Rollbar's error monitoring fits right into your continuous delivery and deployment workflows to provide confidence in every code release. Reduce costs and worry less about breaking things.</div></div><div class="ethical-callout"><small><em><a href="https://readthedocs.org/sustainability/advertising/">Sponsored</a><span> · </span><a href="https://docs.readthedocs.io/en/latest/ethical-advertising.html">Ads served ethically</a></em></small></div></div><img src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/saved_resource" style="display: none;"></div><hr></div>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2018, Paige Peterson &amp; Marshall Gaucher
+      
+        <span class="commit">
+          Revision <code>efe640f9</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions"><!-- Inserted RTD Footer -->
+<div class="injected">
+
+  
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html">latest</a></dd>
+         </strong> 
+        
+        
+        <dd><a href="https://zcash.readthedocs.io/en/english-docs/rtd_pages/addresses.html">english-docs</a></dd>
+        
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://readthedocs.org/projects/zcash/downloads/pdf/latest/">PDF</a></dd>
+        
+        <dd><a href="https://readthedocs.org/projects/zcash/downloads/htmlzip/latest/">HTML</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/zcash/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/zcash/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/zcash/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitLab</dt>
+        <dd>
+          <a href="https://gitlab.com/zcash-docs/zcash-docs/blob/master/source/rtd_pages/addresses.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://gitlab.com/zcash-docs/zcash-docs/edit/master/source/rtd_pages/addresses.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="https://readthedocs.org/projects/zcash/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/en/latest/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+
+</div>
+</div>
+  </div>
+
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/documentation_options.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/jquery-2.0.3.min.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/jquery-migrate-1.2.1.min.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/underscore.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/doctools.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/live.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/transifex-api.js.download"></script>
+        <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/readthedocs-doc-embed.js.download"></script>
+    
+
+  
+
+  <script type="text/javascript" src="./Addresses in Zcash — Zcash Documentation 2.0.2 documentation_files/theme.js.download"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+
+<div id="tx-live-lang-container" class="txlive-langselector txlive-langselector-topright"><ul id="tx-live-lang-picker" class="txlive-langselector-list notranslate"><li data-value="en">English</li><li data-value="fr">Français</li><li data-value="pt_BR">Português (Brasil)</li><li data-value="es">Español</li></ul><div class="txlive-langselector-toggle notranslate" id="tx-live-lang-toggle"><span class="txlive-langselector-current" id="tx-live-lang-current">English</span><span class="txlive-langselector-marker"></span></div></div></body></html>

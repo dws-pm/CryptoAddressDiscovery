@@ -1,0 +1,761 @@
+<!-- https://live.blockcypher.com/dash/tx/f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c/  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="
+
+  3.33999117 DASH
+  transacted in TX f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c
+
+  
+      (fees were 0.00001008 DASH).
+  
+
+  
+    This transaction was mined in DASH block 00000000000000212b182666f5d9c3e3a7e926bf629284d80e37c27f5d20cb0d.
+  
+
+  1 input
+  consumed,
+  25 outputs
+  created.
+
+">
+<meta name="author" content="">
+<link rel="icon" type="image/png" href="/static/img/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/static/img/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/static/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/static/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/static/img/favicon-32x32.png" sizes="32x32">
+<title>
+      
+  
+    DASH Transaction f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c
+  
+
+      | BlockCypher
+    </title>
+<link href='//fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="http://www.blockcypher.com" title="live.blockcypher.com">
+<strong class="logo acc"></strong>
+</a>
+</div>
+<div class="collapse navbar-collapse" id="nav-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<form class="navbar-form navbar-search" role="search" method="post" action="/">
+<input type='hidden' name='csrfmiddlewaretoken' value='z6udoq5D4tlwqatFO9c4Jc8bv8ZGMZOZ' />
+<input type="hidden" value="dash" id="id_coin_symbol" name="coin_symbol">
+<div class="input-group">
+<div class="input-group-btn">
+<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+<span id="search-dropdown-label">DASH</span> <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="javascript:void(0);" onclick="setCoin('btc', 'BTC')">Bitcoin</a></li>
+<li><a href="javascript:void(0);" onclick="setCoin('btc-testnet', 'BTC Testnet')">Bitcoin Testnet</a></li>
+<li><a href="javascript:void(0);" onclick="setCoin('ltc', 'LTC')">Litecoin</a></li>
+<li><a href="javascript:void(0);" onclick="setCoin('doge', 'DOGE')">DogeCoin</a></li>
+<li><a href="javascript:void(0);" onclick="setCoin('dash', 'DASH')">Dash</a></li>
+<li><a href="javascript:void(0);" onclick="setCoin('bcy', 'BC Testnet')">BlockCypher Testnet</a></li>
+</ul>
+</div>
+<input autofocus="autofocus" name="search_string" id="id_search_string" type="text" class="form-control search-input" placeholder="Address, transaction or block">
+<span class="input-group-btn">
+<button type="submit" class="btn btn-primary" title="Search"><i class="fa fa-search"></i></button>
+</span>
+</div>
+</form>
+</li>
+<li class="hidden-sm">
+<a href="/dash/" style="padding:7px 0 7px 15px;" title="Dash">
+
+<div class="header-coin dash-logo acc">Dash</div>
+</a>
+</li>
+<li class="dropdown hidden-sm">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/btc/">Bitcoin</a>
+</li>
+<li>
+<a href="/btc-testnet/">Bitcoin Testnet</a>
+</li>
+<li>
+<a href="/ltc/">Litecoin</a>
+</li>
+<li>
+<a href="/doge/">Dogecoin</a>
+</li>
+<li>
+<a href="/dash/">Dash</a>
+</li>
+<li>
+<a href="/bcy/">BlockCypher Testnet</a>
+</li>
+</ul>
+</li>
+<li id="profile-menu" class="dropdown navbar-form">
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="main-container">
+<div class="page-header">
+<div class="container">
+<h1>
+<i class="fa fa-exchange"></i>
+Dash Transaction
+</h1>
+<h2 class="tagline wrapit semi">f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c</h2>
+</div>
+</div>
+<div class="section">
+<div class="container">
+<div class="dash dash-4">
+<ul>
+<li>
+<span class="dash-label">Amount Transacted</span><br>
+3.33999117 DASH
+</li>
+<li>
+<span class="dash-label">Fees</span><br>
+0.00001008 DASH
+</li>
+<li>
+<span class="dash-label" title="Fri, 16 Nov 2018 07:36:41 +0000">
+Received
+</span><br>
+<i class="fa fa-clock-o"></i>
+<time class="timeago" datetime="2018-11-16T07:36:41Z">
+2018-11-16 07:36 GMT
+</time>
+</li>
+<li>
+<span class="dash-label">
+Confirmations
+<button id='confs-hover' type='button' class='btn-link' data-container='body' data-toggle='popover' data-placement='top' data-html='true' data-content='
+                      <strong>1</strong> confirmations.
+                      <br />
+                      Anything over 6 confirmations is considered completed and irreversible.
+                '>
+<i class="fa fa-info-circle"></i>
+</button>
+</span><br>
+<span id="conf-section" class="pending">
+<i class="fa fa-unlock"></i>
+<span id="num-confs">1/6</span>
+</span>
+</li>
+</ul>
+<div class="clearfix"></div>
+</div>
+<div class="section">
+<div class="container">
+<div class="row">
+<div style="display:none;" id="confidence-section" class="col-md-3 text-center">
+<strong>Confidence</strong>
+<button id="confidence-popover" type='button' class='btn-link'>
+<i class="fa fa-info-circle"></i>
+</button>
+<div class="circle-chart">
+<div id="confidence-widget" class="fill" style="height:95.0%;"></div>
+<span id="confidence-text" class="val">100.00%</span>
+</div>
+</div>
+<div style="display:none;" id="preference-section" class="col-md-3 text-center">
+<strong>Miner Preference</strong>
+<div class="circle-chart">
+<div class="fill low"></div>
+<span class="val">low</span>
+</div>
+</div>
+<p class="text-center">
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#advanced-details">
+ Advanced Details
+<b class="caret"></b>
+</button>
+</p>
+<div class="col-md-12 collapse" id="advanced-details">
+<div class="table-responsive">
+<table class="table">
+<tr>
+<th>Block Hash</th>
+<td>
+<a href="/dash/block/00000000000000212b182666f5d9c3e3a7e926bf629284d80e37c27f5d20cb0d/" class="hidden-xs">00000000000000212b182666f5d9c3e3a7e926bf629284d80e37c27f5d20cb0d</a>
+<a href="/dash/block/00000000000000212b182666f5d9c3e3a7e926bf629284d80e37c27f5d20cb0d/" class="visible-xs">See Block</a>
+</td>
+</tr>
+<tr>
+<th>Block Height</th>
+<td>
+<a href="/dash/block/971703/">971,703</a>
+</td>
+</tr>
+<tr>
+<th>Transaction Index</th>
+<td>
+3
+(<a href="/dash/block/971703/3/">permalink</a>)
+</td>
+</tr>
+<tr>
+<th>Size</th>
+<td>1007 bytes</td>
+</tr>
+<tr>
+<th>Lock Time</th>
+<td>971701</td>
+</tr>
+<tr>
+<th>Version</th>
+<td>2</td>
+</tr>
+<tr>
+<th>Relayed By:</th>
+<td>178.63.94.143:9013</td>
+</tr>
+<tr>
+<td colspan="2" class="text-center">
+<a href="https://api.blockcypher.com/v1/dash/main/txs/f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c?limit=50&amp;includeHex=true" class="btn btn-default">
+<i class="fa fa-code"></i>
+API Call
+</a>
+<a href="http://dev.blockcypher.com/#transactions" class="btn btn-default">
+<i class="fa fa-external-link"></i>
+API Docs
+</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<h3>Details</h3>
+</div>
+<div class="clearfix"></div>
+<div id="f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c" class="well section">
+<div class="col-md-5">
+<h4 class="text-center">1 Input Consumed</h4>
+<div class="txn-input truncate" id="spentby-103cad2a56add575eaa6c8c5a958d75cfc3604f0bf4d795f2d50fc44b28c96b9-0">
+<strong>
+3.34000125 DASH
+</strong>
+from<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XbFfS4QHhHQuEjeeriBuEieDmbT3CEWHAT/">XbFfS4QHhHQuEjeeriBuEieDmbT3CEWHAT</a>
+(<a href="/dash/tx/103cad2a56add575eaa6c8c5a958d75cfc3604f0bf4d795f2d50fc44b28c96b9/#output-index-0">output</a>)
+</div>
+</div>
+<div class="col-md-2">
+<div class="txn-arrow"></div>
+</div>
+<div class="col-md-5">
+<h4 class="text-center">25 Outputs Created</h4>
+<div class="txn-output truncate" id="output-index-0">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XakbCan8bNayMvos3FgDV8R3ZSrRmVCDBU/">XakbCan8bNayMvos3FgDV8R3ZSrRmVCDBU</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-1">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xh1qjS4o81uSjHtL8UDLhj5kFUhhay8DsZ/">Xh1qjS4o81uSjHtL8UDLhj5kFUhhay8DsZ</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-2">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XiJYZamxcevjw8o7QPJ95XKQp1XJeunmBh/">XiJYZamxcevjw8o7QPJ95XKQp1XJeunmBh</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-3">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XjEdpyTZZ4LoT1n5G3K5BVXaSTTYREQbkv/">XjEdpyTZZ4LoT1n5G3K5BVXaSTTYREQbkv</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-4">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xki4VZMBEUx84CpxSVZDjVJS148yd16DKd/">Xki4VZMBEUx84CpxSVZDjVJS148yd16DKd</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-5">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xm75TTiDZxynKiSkWyu5zs1PyZBwgwEmC4/">Xm75TTiDZxynKiSkWyu5zs1PyZBwgwEmC4</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-6">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XmiSqiAxbeR66aWJcbqTSiUbeSduEEw3AC/">XmiSqiAxbeR66aWJcbqTSiUbeSduEEw3AC</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-7">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xotqt29FQPsWXPSvqbDLKgotp5WnBz7EmP/">Xotqt29FQPsWXPSvqbDLKgotp5WnBz7EmP</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-8">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xw9LJrDWVDspVWE4yrguNGgZDpWSfLqzER/">Xw9LJrDWVDspVWE4yrguNGgZDpWSfLqzER</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-9">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XwfyaivGf1FPVkow1CNmmLH58Y4YrW8V4w/">XwfyaivGf1FPVkow1CNmmLH58Y4YrW8V4w</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-10">
+<strong>
+0.0100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xxzpvwo9mqJdovggbjNNtudYA4coYuouLi/">Xxzpvwo9mqJdovggbjNNtudYA4coYuouLi</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-11">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XbfadTu4D4afUd98AWNoysnUreMYhewxoj/">XbfadTu4D4afUd98AWNoysnUreMYhewxoj</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-12">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XdfQGwLF8AZtXdRGdd2vv5a61MujuFZLYH/">XdfQGwLF8AZtXdRGdd2vv5a61MujuFZLYH</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-13">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XfxbUCoKzXBmUrAfEffUcSfPonvtx6n4qn/">XfxbUCoKzXBmUrAfEffUcSfPonvtx6n4qn</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-14">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XgMfJyLPJ2rPWYceXbBy22GFTGJU1UzJAE/">XgMfJyLPJ2rPWYceXbBy22GFTGJU1UzJAE</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-15">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XjTH1KB1fUMEJEMhoAxdoawzoCJrdYthec/">XjTH1KB1fUMEJEMhoAxdoawzoCJrdYthec</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-16">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xr4vJYfDH4JYHmW9UVNmAzNVT8VttoXTYX/">Xr4vJYfDH4JYHmW9UVNmAzNVT8VttoXTYX</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-17">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xr8pk4hiL7UJdEvr6iibFnZs2GBJDw2RRf/">Xr8pk4hiL7UJdEvr6iibFnZs2GBJDw2RRf</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-18">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XtrREmM1bN9pETrD6WjmYA55mEzaCnupr9/">XtrREmM1bN9pETrD6WjmYA55mEzaCnupr9</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-19">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XuM5AsuhsVZzPsHsDAiwvg9AsKwN6eK1Qk/">XuM5AsuhsVZzPsHsDAiwvg9AsKwN6eK1Qk</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-20">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/Xv5TN11QUBoZJfyGCzvBLTZhB9w9DfXmQh/">Xv5TN11QUBoZJfyGCzvBLTZhB9w9DfXmQh</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-21">
+<strong>
+0.100001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XynXPWr3dcGP6SYBGxFWrtkLZo7C961HLS/">XynXPWr3dcGP6SYBGxFWrtkLZo7C961HLS</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-22">
+<strong>
+0.12995907 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XbFfS4QHhHQuEjeeriBuEieDmbT3CEWHAT/">XbFfS4QHhHQuEjeeriBuEieDmbT3CEWHAT</a>
+<span class="truncate">
+(<a href="/dash/tx/fb36f9ca2f210b9e813888b6d24d784718015b15af0e04a90c812848f79d812f/#spentby-f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c-22">spent</a>)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-23">
+<strong>
+1.00001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XazTyaTwR1paLayCnM2eNYukGynx74S1Qx/">XazTyaTwR1paLayCnM2eNYukGynx74S1Qx</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+<div class="txn-output truncate" id="output-index-24">
+<strong>
+1.00001 DASH
+</strong>
+to<br>
+<i class="fa fa-qrcode"></i>
+<a href="/dash/address/XtdtKHUMgqsvmrWsz8uVxHpTuqPrKYh9ce/">XtdtKHUMgqsvmrWsz8uVxHpTuqPrKYh9ce</a>
+<span class="truncate">
+(unspent)
+</span>
+</div>
+</div>
+<div class="clearfix"></div>
+<div>
+<h4 class="text-center">
+<strong>
+Estimated Value Sent
+</strong>:
+3.2100321 DASH
+(<a data-toggle="collapse" href="#f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c-readMore" aria-expanded="false" aria-controls="collapseExample">more</a>)
+</h4>
+<div class="collapse" id="f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c-readMore">
+<div class="well">
+"Estimated Value Sent" excludes known change addresses.
+For example, let's say we have a single transaction where address A sends 1 BTC to address B and also 1 BTC back to address A as change, then only 1 BTC is estimated to have been sent.
+Proper use of a new change address for each transaction (like all HD wallet implementations) obfuscate this feature.
+</div>
+</div>
+</div>
+</div>
+<div id="metadata">
+<div>
+<h2>
+BlockCypher Public Metadata (beta)
+<a href="/dash/metadata/tx/f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c/" class="btn btn-default">
+<i class="fa fa-code"></i>
+Add Metadata
+</a>
+<a href="http://dev.blockcypher.com/#metadata-api" class="btn btn-default">
+<i class="fa fa-external-link"></i>
+API Docs
+</a>
+</h2>
+<table id="metadata-table" class="table table-hover table-condensed" style="display:none;">
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody id="metadata-tbody">
+</tbody>
+</table>
+<p id="metadata-empty-notice" style="display:none;">
+This page has no public metadata yet.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-1 col-md-offset-10">
+<form class="form-horizontal" action="/set-units" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='z6udoq5D4tlwqatFO9c4Jc8bv8ZGMZOZ' />
+<div id="div_id_unit_choice" class="form-group"><div class="controls "><select class="select form-control" id="id_unit_choice" name="unit_choice" onchange="this.form.submit()"><option value="btc" selected="selected">BTC</option><option value="mbtc">mBTC</option><option value="bit">bit</option><option value="satoshi">satoshi</option></select></div></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="main-footer">
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<p>We are social
+<a href="https://twitter.com/blockcypher" class="social" target="_blank">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="https://www.facebook.com/blockcypher" class="social" target="_blank">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://github.com/blockcypher" class="social" target="_blank">
+<i class="fa fa-github-alt"></i>
+</a>
+</p>
+</div>
+<div class="col-sm-4 text-center">
+<p class="text-center reset">
+<a href="https://github.com/blockcypher/explorer" class="btn btn-default btn-lg btn-gh">
+<i class="fa fa-github"></i>
+Fork me on GitHub
+</a>
+</p>
+</div>
+<div class="col-sm-4">
+<p class="text-right">
+Powered by <a href="http://www.blockcypher.com/">BlockCypher Web Services</a><br>
+© 2018 - BlockCypher
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/static/js/custom.js"></script>
+<script src="/static/js/jquery.timeago.js"></script>
+<script>
+
+    
+      var memoryPools = 0;
+    
+
+    var doubleSpend = "No";
+
+    var confidence_checks = 0;
+    function poll_confidence() {
+      var CONFIDENCE_TIMEOUT_MS = 2000;
+      $.ajax({
+        type: 'get',
+        url: '/dash/tx-confidence/f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c/',
+        success: function (data) {
+          console.log('Confidence API Call Success');
+          console.log(data);
+
+          confidence_checks += 1;
+          CONFIDENCE_TIMEOUT_MS += 1000;
+
+          // Update #s
+          $("#confidence-widget").height(data['confidence_pct_scaled'] + '%');
+          $("#confidence-text").text(data['confidence_pct'] + "%");
+          $('#receive-cnt').text(data['receive_cnt']);
+
+          memoryPools = data['receive_cnt'];
+
+          
+          if (data['double_spend_detected']) {
+            location.reload();
+          }
+
+          if (confidence_checks < 5) {
+            setTimeout(poll_confidence, CONFIDENCE_TIMEOUT_MS);
+          }
+
+        },
+        error: function(data) {
+          console.log('Confidence API Call Failure');
+          confidence_checks += 1;
+          if (confidence_checks < 5) {
+            setTimeout(poll_confidence, 10000);
+          }
+        }
+      });
+    }
+
+    $(document).ready(function(){
+
+      $("time.timeago").timeago();
+
+      
+
+      function popoverContent(){
+        var html = '';
+        html += '<span style="display:none;">' +
+                '<b>Double-Spend Detected:</b> ' +
+                '<span id="ds-detected">No</span>' +
+              '</span><br>' +
+              '<span style="display:none;" id="pools-section">' +
+                '<b>Memory Pools With Tx:</b> <span id="receive-cnt">'+memoryPools+'</span>'+
+                '</span><br />' +
+              '<span><a href="http://dev.blockcypher.com/#confidence-factor">How Calculated</a></span>';
+        return html;
+      }
+
+      //init popover
+      $('[data-toggle="popover"]').popover({'html': true});
+
+      //init confidence popover
+      $('#confidence-popover').popover({
+        'html':true,
+        'placement':'top',
+        'trigger': 'click',
+        'content': function () {
+          return popoverContent();
+        }
+      })
+
+      if (window.location.hash == '#advanced-details') {
+        $('#advanced-details').collapse('show');
+      }
+
+      // Highlight an input or output by index num
+      if (window.location.hash.slice(1,13) == 'output-index') {
+        $(window.location.hash).attr('style', "background-color:#eee;")
+      }
+      if (window.location.hash.slice(1,8) == 'spentby') {
+        $(window.location.hash).attr('style', "background-color:#eee;")
+      }
+
+      fetch_metadata('dash', 'tx', 'f906fa065fd8c1b5268db7fba60b012badb8b8b9edda8da6ab2249c32ba64c4c');
+
+    })
+
+  </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50839214-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+
