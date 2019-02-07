@@ -4,6 +4,8 @@ namespace App\Supports\CryptoAddress;
 
 /**
  * This is the main parser for crypto addresses.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class Parser
 {

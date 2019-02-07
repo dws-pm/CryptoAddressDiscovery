@@ -4,6 +4,8 @@ namespace App\Supports\CryptoAddress;
 
 /**
  * This BTC parser uses specific checksum validation.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class BTCParser
 {

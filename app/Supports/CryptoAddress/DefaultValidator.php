@@ -4,6 +4,8 @@ namespace App\Supports\CryptoAddress;
 
 /**
  * A default no-op crypto address validation.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class DefaultValidator extends BaseValidator
 {

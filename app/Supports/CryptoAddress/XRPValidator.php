@@ -3,7 +3,9 @@
 namespace App\Supports\CryptoAddress;
 
 /**
- * XRP crypto address validation.
+ * A XRP crypto address validator.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class XRPValidator extends BaseValidator
 {

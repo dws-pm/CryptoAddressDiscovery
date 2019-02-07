@@ -4,6 +4,8 @@ namespace App\Supports\CryptoAddress;
 
 /**
  * Base class for crypto address validation.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class BaseValidator
 {

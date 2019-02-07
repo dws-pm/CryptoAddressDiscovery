@@ -10,6 +10,7 @@ include 'app/Supports/CryptoAddress/ValidationFactory.php';
 include 'app/Supports/CryptoAddress/BaseValidator.php';
 include 'app/Supports/CryptoAddress/DefaultValidator.php';
 include 'app/Supports/CryptoAddress/XRPValidator.php';
+include 'app/Supports/CryptoAddress/BCHValidator.php';
 
 use PHPUnit\Framework\TestCase;
 use App\Supports\CryptoAddress\Parser;
@@ -21,7 +22,9 @@ use App\Supports\CryptoAddress\XRPValidator;
 
 /**
  * A basic unit test for Parser on altcoins addresses
+ * Execute 'phpunit Unit <path/to/test.php>' from project root directory
  *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class AltCryptoAddressParserTest extends TestCase
 {

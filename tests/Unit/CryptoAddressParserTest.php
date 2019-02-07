@@ -11,7 +11,9 @@ use App\Supports\CryptoAddress\BTCParser;
 
 /**
  * A basic unit test for Parser on BTC addresses.
+ * Execute 'phpunit Unit <path/to/test.php>' from project root directory
  *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class CryptoAddressParserTest extends TestCase
 {

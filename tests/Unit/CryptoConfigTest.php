@@ -6,7 +6,9 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * A basic unit test for testing config file.
+ * Execute 'phpunit Unit <path/to/test.php>' from project root directory
  *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  */
 class CryptoConfigTest extends TestCase
 {
