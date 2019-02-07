@@ -7,6 +7,8 @@ class InvalidChecksumException extends Base32Exception {}
 
 /**
  * A XRP crypto address validator.
+ * Requires PHP GMP module. Install php7.1-gmp,
+ *     sudo apt-get install php7.1-gmp
  *
  * @see https://github.com/bitcoincoltd/cashaddress
  */
