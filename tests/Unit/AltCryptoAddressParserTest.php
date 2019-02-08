@@ -273,25 +273,4 @@ class AltCryptoAddressParserTest extends TestCase
         $this->assertTrue($actualCount === 4); // customized word boundary used
     }
 
-    /**
-     * A test for XRP addresses in xrpFake.onion file.
-     *
-     * @return void
-     */
-    public function testAddressesXRPFake()
-    {
-        $source = 'tests/Unit/xrpFake.onion';
-        $this->assertTrue(file_exists($source), 'The file '.$source.' does not exists!');
-        $content = file_get_contents($source);
-
-        $parser = new Parser();
-        $result = $parser->extractAddresses($source, $content);
-        $this->assertFalse(is_null($result));
-        $this->assertTrue(is_array($result) === true);
-        $actualCount = count($result);
-        echo "\nXRP count:".$actualCount."\n";
-
-        print_r($result);
-        $this->assertTrue($actualCount === 1); // customized word boundary used
-    }
 }
