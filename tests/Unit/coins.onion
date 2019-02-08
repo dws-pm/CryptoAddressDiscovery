@@ -1,0 +1,52 @@
+<!--
+http://onehost4w6jfd4ly.onion/
+-->
+<!DOCTYPE html><html><head>
+<title>Tor on OneHost Cloud</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="Daniel Winzen">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head><body>
+<p>Info | <a href="register.php">Register</a> | <a href="login.php">Login</a> | <a href="list.php">List of hosted sites</a> | <a href="faq.php">FAQ</a></p>
+<p>Here you can get register and host your site on Tor.</p>
+<ul>
+<li>Method Of Payments</li>
+<li>Manual Crypto Payments</li>
+<li>For Paypal, Credit Card or other CryptoCurrencies & monthly billing please use our billing system</li>
+<li>Our Payment Addresses Below</li>
+<li>Price Per Account : $59.99 lifetime access</li>
+<li>Bitcoin Address: 185j7kpJs7tJCvStjzWkV9xgLkTP3EVyvL  </li>
+<li>Ethereum Address: 0xc05101d792d9dfcf82dc9f9938227b0c86cc1939  </li>
+<li>Ripple Address: rPvKH3CoiKnne5wAYphhsWgqAEMf1tRAE7?dt=1490  MUST INCLUDE DESITNATION TAG 1490 </li>
+<li>BitcoinCash: 1JD7Bn7P2V9uYJFsCwJYqM5kPRwB2A3eJi</li>
+<li>You will need to notify us of your payment including transaction ID and amount via https://onehostcloud.hosting/support/</li>
+<li></li>
+<li>Anonymous webhosting</li>
+<li>Chose between PHP 7.0, 7.1, 7.2 or no PHP support</li>
+<li>Nginx Webserver</li>
+<li>SQLite support</li>
+<li>1 MariaDB (MySQL) database</li>
+<li><a href="/phpmyadmin/" target="_blank">PHPMyAdmin</a> and <a href="/adminer/" target="_blank">Adminer</a> for web based database administration</li>
+<li>Web-based file management</li>
+<li>FTP access</li>
+<li>SFTP access</li>
+<li>2GB Disk Space</li>
+<li>mail() can send e-mails from your.onion@onehost4w6jfd4ly.onion (your.onion@tormail.dns-registrar.com for clearnet)</li>
+<li>Webmail and IMAP, POP3 and SMTP access to your mail account</li>
+<li>Mail sent to anything@your.onion gets automatically redirected to your inbox</li>
+<li>Your own .onion address</li>
+<li>We cannot install any additional applications or custom configurations so please do not ask!!</li>
+<li>More to come…</li>
+</ul>
+<h2>Rules</h2>
+<ul>
+<li>No child pornography!</li>
+<li>No terroristic propaganda!</li>
+<li>No malware! (e.g. botnets)</li>
+<li>No spam!</li>
+<li>No proxy scripts! (You are already using TOR and this will just burden the network)</li>
+<li>No IP logger or similar de-anonymizer sites!</li>
+<li>We reserve the right to delete any site for violating these rules and adding new rules at any time.</li>
+</ul>
+</body></html>
+

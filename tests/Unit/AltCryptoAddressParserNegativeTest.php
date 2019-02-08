@@ -145,6 +145,37 @@ class AltCryptoAddressParserNegativeTest extends TestCase
     }
 
     /**
+     * A negative test for fake XRP address in onion file.
+     *
+     * @return void
+     */
+    public function testXRPFake()
+    {
+        $source = 'tests/Unit/xrpFake.onion';
+        $this->assertTrue(file_exists($source), 'The file '.$source.' does not exists!');
+        $content = file_get_contents($source);
+
+        $parser = new Parser();
+        $results = $parser->extractAddresses($source, $content);
+        $this->assertFalse(is_null($results));
+        $this->assertTrue(is_array($results) === true);
+
+        $typeCount = 0;
+        $types = array_column($results, 'cryptoType');
+        print_r($types);
+        foreach($types as $type) {
+            if ($type === 'XRP') {
+                $typeCount++;
+            }
+        }
+
+        echo "\nXRP count:".$typeCount."\n";
+
+        print_r($results);
+        $this->assertTrue($typeCount === 0); // customized word boundary used
+    }
+
+    /**
      * A negative test for BCH addresses in onion file.
      *
      * @return void
