@@ -2,7 +2,7 @@
 This repository contains PHP implementation for parsing and extracting crypto-currency addresses.
 
 For example, we can simply execute Parser->extractAddresses() function by passing in a html or text file.
-``php
+```php
         $source = 'bitcoins_for_sale.html';
         $this->assertTrue(file_exists($source), 'The file '.$source.' does not exists!');
         $content = file_get_contents($source);
