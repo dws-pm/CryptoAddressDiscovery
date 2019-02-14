@@ -111,7 +111,7 @@ class AltCryptoAddressParserTest extends TestCase
         echo "\nLTC count:".$actualCount."\n";
 
         print_r($result);
-        $this->assertTrue($actualCount === 69); // assert magic number! 27BTC + 42LTC
+        $this->assertTrue($actualCount === 42); // assert magic number! 27BTC(now excluded) + 42LTC
     }
 
 
