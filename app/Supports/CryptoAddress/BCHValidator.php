@@ -10,6 +10,9 @@ class InvalidChecksumException extends Base32Exception {}
  * Requires PHP GMP module. Install php7.1-gmp,
  *     sudo apt-get install php7.1-gmp
  *
+ * NOTE: Credits to URL below. This class has not been tested.
+ *
+ * @author Sebastian Ma <sebmalikkeung@gmail.com>
  * @see https://github.com/bitcoincoltd/cashaddress
  */
 class BCHValidator extends BaseValidator
